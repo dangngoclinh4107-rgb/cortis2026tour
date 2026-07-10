@@ -64,7 +64,7 @@
 									<input type="checkbox" id="subscribe">
 									Subscribe to newsletter</label>
 							</div>
-							<input type="submit" value="Send Now" class="btn3" onclick="alert('Thank you for contacting! Stay tuned for more updates about the CORTIS 2026 Tour.')">
+							<input type="submit" value="Send Now" class="btn3" onclick="alert('Thank you for contacting! Stay tuned for more updates about the CORTIS 2026 Tour.'); return false;">
 						</li>
 					</ul>
 				</form>
@@ -98,7 +98,7 @@
 					<p>
 						Sign up for Our Newsletter
 					</p>
-					<form action="index.html" method="post">
+					<form onsubmit="event.preventDefault();">
 						<input type="text" value="">
 						<input type="submit" value="Sign Up!" onclick="alert('Thank you for subscribing! Stay tuned for more updates about the CORTIS 2026 Tour.')">
 					</form>
